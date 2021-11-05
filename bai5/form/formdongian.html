@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="">
+</head>
+<body>
+<div class="body__form">
+
+    <div class="body__form-content">
+        <div class="body__form-header">
+            <p>SỞ THÍCH CỦA BẠN</p>
+        </div>
+
+        <form action="#" method="get">
+            <label for="body__form-name" class="text">Họ và tên </label>
+            <input type="text" id="body__form-name" name="fullname" placeholder="Nguyễn Văn A" size="38">
+            <br>
+            <label for="email" class="text">Email</label>
+            <input type="email" id="email" name="email" placeholder="abc@gmail.com" size="30">
+            <br>
+            <table>
+                <tr>
+                    <td rowspan="3" style="vertical-align: top">
+                        <p class="text">Sở thích</p>
+                    </td>
+                    <td>
+                        <input type="checkbox" name="hobby" value="thethao" id="thethao"> <label for="thethao">Thể thao</label>
+                    </td>
+                    <td>
+                        <input type="checkbox" name="hobby" value="amnhac" id="amnhac"> <label for="amnhac">Âm nhạc</label>
+                    </td>
+                    <td>
+                        <input type="checkbox" name="hobby" value="docsach" id="docsach"> <label for="docsach">Đọc sách</label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="checkbox" name="hobby" value="luotweb" id="luotweb"> <label for="luotweb">Lướt web</label>
+                    </td>
+                    <td>
+                        <input type="checkbox" name="hobby" value="choigame" id="choigame"> <label for="choigame">Chơi game</label>
+                    </td>
+                    <td>
+                        <input type="checkbox" name="hobby" value="dienanh" id="dienanh"> <label for="dienanh">Điện ảnh</label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="checkbox" name="hobby" value="dulich" id="dulich"> <label for="dulich">Du lịch</label>
+                    </td>
+                </tr>
+            </table>
+            <input type="submit" value="Gửi thông tin" class="btn1">
+            <input type="reset" value="Nhập lại" class="btn2">
+
+        </form>
+    </div>
+</div>
+<br>
+
+<div class="body__servey">
+
+    <div class="body__servey-content">
+        <div class="body__servey-header">
+            <p>ĐĂNG KÝ HỌC VIÊN</p>
+        </div>
+
+        <form action="#" method="get">
+            <label for="body__servey-name" class="text">Họ và tên </label>
+            <input type="text" id="body__servey-name" name="fullname" placeholder="Nguyễn Văn A" size="35" required>
+            <br>
+            <label for="dob" class="text">Ngày sinh</label>
+            <input type="date" id="dob" name="dob">
+            <br>
+            <span class="text">Giới tính</span>
+            <input type="radio" id="male" name="gender" value="male"> <label for="male">Nam</label>
+            <input type="radio" id="female" name="gender" value="female"> <label for="female">Nữ</label>
+            <br>
+            <p class="text">Địa chỉ</p>
+            <textarea name="address" id="address" cols="30" rows="5"></textarea>
+            <br>
+            <span class="text">Lớp</span>
+            <select name="class" id="class" >
+                <option value="choplop" selected>-- Chọn lớp --</option>
+                <option value="lop1">Lớp 1</option>
+                <option value="lop2">Lớp 2</option>
+                <option value="lop3">Lớp 3</option>
+                <option value="lop4">Lớp 4</option>
+                <option value="lop5">Lớp 5</option>
+                <option value="lop6">Lớp 6</option>
+                <option value="lop7">Lớp 7</option>
+                <option value="lop8">Lớp 8</option>
+                <option value="lop9">Lớp 9</option>
+                <option value="lop10">Lớp 10</option>
+                <option value="lop11">Lớp 11</option>
+                <option value="lop12">Lớp 12</option>
+            </select>
+            <br>
+            <label for="body__servey-email" class="text">Email</label>
+            <input type="email" id="body__servey-email" name="email" placeholder="abc@gmail.com" size="25">
+            <br>
+            <label for="body__servey-mobile" class="text">Điện thoại</label>
+            <input type="number" id="body__servey-mobile" name="email" placeholder="0123456789" size="25">
+
+            <br>
+            <input type="submit" value="Đăng ký" class="btn1">
+            <input type="reset" value="Nhập lại" class="btn2">
+        </form>
+    </div>
+
+</div>
+</body>
+
+<style>
+    html {
+        box-sizing: border-box;
+    }
+    .body__form {
+        background-color: cyan;
+        padding: 5px;
+        width: 500px;
+    }
+
+    .body__form-header {
+        background-color: red;
+        padding: 5px;
+        margin: 5px;
+        text-align: center;
+    }
+
+    .body__servey-header {
+        background-color: greenyellow;
+        padding: 5px;
+        margin: 5px;
+        text-align: center;
+    }
+
+    .body__servey-header p {
+        margin: 0px;
+        color: blue;
+    }
+
+    .body__form-header p {
+        margin: 0px;
+        color: white;
+    }
+
+    .body__form-content {
+        background-color: white;
+    }
+
+    .text {
+        display: inline-block;
+        color: blue;
+        min-width: 70px;
+        padding: 5px;
+        margin: 0px;
+        vertical-align: top;
+    }
+
+    .btn1 {
+        display: inline-block;
+        margin: 10px 10px 10px 80px;
+        padding: 5px;
+    }
+
+    .btn2 {
+        display: inline-block;
+        margin: 10px 10px 10px 10px;
+        padding: 5px;
+    }
+
+    .btn1:hover, .btn2:hover {
+        cursor: pointer;
+    }
+
+    .body__servey {
+        background-color: khaki;
+        padding: 5px;
+        width: 500px;
+    }
+</style>
+</html>
